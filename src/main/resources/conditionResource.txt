@@ -1,0 +1,1 @@
+@ConditionalOnResource注解测试文件，by：com.zy.comfig.BeanConfiguration.createTeacher(User)
