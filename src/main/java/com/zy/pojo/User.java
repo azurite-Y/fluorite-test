@@ -33,6 +33,7 @@ public class User {
 		super();
 		this.name = name;
 	}
+	
 	public int getId() {
 		return id;
 	}

@@ -14,13 +14,11 @@ import org.zy.fluorite.core.annotation.Component;
 import org.zy.fluorite.core.annotation.Order;
 import org.zy.fluorite.core.interfaces.Ordered;
 
-import com.zy.aop.AddAnnotation;
-import com.zy.aop.MyDeclareParentsAnnotation;
-
 /**
  * @DateTime 2020年7月10日 上午9:27:44;
  * @author zy(azurite-Y);
  * @Description
+ * 
  */
 @Aspect
 @Component
@@ -33,8 +31,11 @@ public class AnnotationAspect {
 	 * </p>
 	 * @Pointcut - 用来声明切点表达式 通知直接使用定义的方法名即可引入当前的切点表达式。
 	 */
-	@Pointcut(value = "com.zy.aop.UserServiceImpl.say()", args = { String.class,
-			int.class }, prefix = "execution", returnType = "void")
+//	@Pointcut(value = "com.zy.aop.UserServiceImpl.say()", args = { String.class,
+//		int.class }, prefix = "execution", returnType = "void")
+//	@Pointcut(value="com.zy.aop.A" , prefix = "@annotation")
+	@Pointcut(value="com.zy.aop.A" , prefix = "@args")
+//	@Pointcut(value="com.zy.aop.A" , prefix = "@within")
 	public void Pointcut() {}
 
 	@Before(value = "Pointcut()")
@@ -54,8 +55,8 @@ public class AnnotationAspect {
 	}
 
 	@AfterReturning(value = "Pointcut()")
-	public void myAfterReturn(JoinPoint jp, String name , int len) {
-		System.out.println("myAfterReturn{"+name+"-"+len+"}="+jp.getJoinPointMethod().getName());
+	public void myAfterReturn(JoinPoint jp) {
+		System.out.println("myAfterReturn="+jp.getJoinPointMethod().getName());
 	}
 
 	@AfterThrowing(value = "Pointcut()")
@@ -64,7 +65,7 @@ public class AnnotationAspect {
 	}
 
 	@Around(value = "Pointcut()")
-	public Object myArround(ProceedingJoinPoint p , String name , int len) throws Throwable {
+	public Object myArround(ProceedingJoinPoint p) throws Throwable {
 		System.out.println("-------------myarround方法-------------------");
 		System.out.println("=环绕-前置=");
 		Object result = p.proceed();
