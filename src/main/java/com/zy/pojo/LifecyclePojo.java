@@ -1,12 +1,12 @@
 package com.zy.pojo;
 
-import javax.annotation.Resource;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.zy.fluorite.context.interfaces.Lifecycle;
 import org.zy.fluorite.core.annotation.Repository;
 import org.zy.fluorite.core.utils.DebugUtils;
+
+import javax.annotation.Resource;
 
 /**
  * @DateTime 2020年7月2日 下午12:17:59;

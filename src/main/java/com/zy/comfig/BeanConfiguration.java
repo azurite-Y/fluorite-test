@@ -1,5 +1,8 @@
 package com.zy.comfig;
 
+import com.zy.pojo.People;
+import com.zy.pojo.Teacher;
+import com.zy.pojo.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.zy.fluorite.context.annotation.conditional.ConditionalOnProperty;
@@ -7,10 +10,6 @@ import org.zy.fluorite.context.annotation.conditional.ConditionalOnResource;
 import org.zy.fluorite.core.annotation.Bean;
 import org.zy.fluorite.core.annotation.Configuration;
 import org.zy.fluorite.core.annotation.Lazy;
-
-import com.zy.pojo.People;
-import com.zy.pojo.Teacher;
-import com.zy.pojo.User;
 
 /**
  * @DateTime 2020年6月29日 下午2:16:40;

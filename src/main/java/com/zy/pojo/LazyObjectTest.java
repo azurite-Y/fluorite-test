@@ -1,9 +1,8 @@
 package com.zy.pojo;
 
+import com.zy.aop.UserService;
 import org.zy.fluorite.core.annotation.Autowired;
 import org.zy.fluorite.core.annotation.Component;
-
-import com.zy.aop.UserService;
 
 /**
  * @DateTime 2020年7月16日 下午2:10:46;

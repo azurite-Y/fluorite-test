@@ -8,6 +8,6 @@ import java.util.List;
  * @Description:
  */
 public interface UserService {
-	public void say(String name,int len);
-	public List<String> say(String name);
+	void say(String name, int len);
+	List<String> say(String name);
 }

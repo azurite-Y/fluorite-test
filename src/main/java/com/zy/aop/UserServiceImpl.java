@@ -1,9 +1,9 @@
 package com.zy.aop;
 
-import java.util.List;
-
 import org.zy.fluorite.core.annotation.Lazy;
 import org.zy.fluorite.core.annotation.Service;
+
+import java.util.List;
 
 /**
  * @author: zy;
@@ -16,7 +16,7 @@ import org.zy.fluorite.core.annotation.Service;
 public class UserServiceImpl implements UserService{
 
 	@Override
-	@A
+//	@A
 	public void say(String name,int len) {
 		System.out.println("==say{"+name+"-"+len+"}==");
 	}

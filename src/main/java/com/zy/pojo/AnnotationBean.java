@@ -1,11 +1,11 @@
 package com.zy.pojo;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.zy.fluorite.core.annotation.Component;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
 /**
  * @DateTime 2020年7月2日 下午3:04:57;

@@ -1,12 +1,11 @@
 package com.zy.comfig;
 
+import com.zy.pojo.Student;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.zy.fluorite.core.annotation.Component;
 import org.zy.fluorite.core.interfaces.instantiation.SmartFactoryBean;
 import org.zy.fluorite.core.utils.DebugUtils;
-
-import com.zy.pojo.Student;
 
 /**
  * 实例化工厂
